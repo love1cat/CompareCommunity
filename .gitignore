@@ -1,0 +1,8 @@
+*.o
+*.swp
+Xcode/DerivedData/*
+Xcode/Output/*
+Xcode/CompareCommunity.xcodeproj/project.xcworkspace/xcuserdata/*
+
+Xcode/CompareCommunity.xcodeproj/xcuserdata/*
+
