@@ -10,8 +10,8 @@
 #include "cluster_comp_base.h"
 
 namespace {
-  const char * INPUT1 = "test1.txt";
-  const char * INPUT2 = "test2.txt";
+  const char * INPUT1 = "clusters.txt";
+  const char * INPUT2 = "conv.top5000.cmty.txt";
 }
 
 int main(int argc, const char * argv[]) {
