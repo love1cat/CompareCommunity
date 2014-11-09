@@ -1,8 +1,14 @@
 *.o
 *.swp
+*.eps
 
 build/*
 build2/*
+
+!result/
+
+result/*
+!result/drawfig.gp
 
 Xcode/DerivedData/*
 Xcode/Output/*
