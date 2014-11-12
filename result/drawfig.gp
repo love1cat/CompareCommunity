@@ -1,4 +1,4 @@
-#!/Users/andy/Tools/gnuplot/bin/gnuplot
+#!/home/yus08002/Tools/gnuplot/bin/gnuplot
 
 # set style
 lwidth = 1
@@ -16,19 +16,32 @@ set style increment user
 set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
 set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
 
-# plot limited opt with diff area results
-# set yrange [340:480]
 set xtics 0, 1000, 5000
-sim_eps = "sim.eps"
-sim_nw_log = "nw/simi_result.txt"
-sim_org_log = "org/simi_result.txt"
-sim_mix_log = "mix/simi_result.txt"
+
+# DBLP graphs
+sim_eps = "sim_dblp.eps"
+sim_nw_log = "../buildnw/simi_result.txt"
+sim_org_log = "../buildorg/simi_result.txt"
+sim_mix_log = "../buildmix/simi_result.txt"
 
 set terminal postscript eps color enhanced "Times-Roman" fontsize
 set output sim_eps
-set xlabel "Community Pair Index"
+set xlabel "Community Pair Index (DBLP)"
 set ylabel "Similarity"
 plot sim_nw_log using 3 title "Node-walker graph", \
-     sim_org_log using 3 title "Original graph", \
-     sim_mix_log using 3 title "Mixed graph"
+     sim_org_log using 3 title "Mixed graph", \
+     sim_mix_log using 3 title "Original graph"
 
+# DBLP graphs
+asim_eps = "sim_amazon.eps"
+asim_nw_log = "../abdnw/simi_result.txt"
+asim_org_log = "../abdorg/simi_result.txt"
+asim_mix_log = "../abdmix/simi_result.txt"
+
+set terminal postscript eps color enhanced "Times-Roman" fontsize
+set output asim_eps
+set xlabel "Community Pair Index (AMAZON)"
+set ylabel "Similarity"
+plot asim_nw_log using 3 title "Node-walker graph", \
+     asim_org_log using 3 title "Mixed graph", \
+     asim_mix_log using 3 title "Orignal graph"

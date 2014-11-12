@@ -11,7 +11,7 @@
 
 namespace {
   const char * INPUT1 = "clusters.txt";
-  const char * INPUT2 = "conv.top5000.cmty.txt";
+  const char * INPUT2 = "../input/conv.top5000.cmty.txt";
 }
 
 int main(int argc, const char * argv[]) {

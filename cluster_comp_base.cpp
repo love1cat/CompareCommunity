@@ -123,7 +123,7 @@ void ClusterCompareBase::write_result(const Result &res, const CommunityVector_t
     dof << "Community " << id2 << ":" << std::endl;
     write_community(comm_vec2[id2], dof);
     
-    sof << id1 << " " << id2 << " " << sim;
+    sof << id1 << " " << id2 << " " << sim << std::endl;
   }
 }
 

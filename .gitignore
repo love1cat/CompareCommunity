@@ -5,6 +5,10 @@
 build/*
 build2/*
 
+abd*
+build*
+input/
+
 !result/
 
 result/*
